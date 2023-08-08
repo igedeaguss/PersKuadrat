@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    flex-direction: column;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #F3F4F6;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.inputan {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.inputan label {
+    margin-right: 10px;
+}
+.inputan input {
+    width: 100px; /* Atur lebar sesuai kebutuhan */
+    font-size: 16px;
+    border: 1px solid #a0a0a0;
+    padding: 5px;
+   
+}
+.hasil {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.output {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+.container button{
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20spx;
+    background-color:  #374259;
+    color: white;
+    border: 0;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 8px 8px;
+}
+.output input {
+    width: 150px; /* Atur lebar sesuai kebutuhan */
+    font-size: 16px;
+    border: 1px solid #a0a0a0;
+    padding: 5px;
+}
+#keterangan {
+    display: block; /* atau inline-block */
+    width: 250px;   /* Anda bisa mengatur lebar sesuai kebutuhan */
+    
+     
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pers_kuadrat.css">
+        <title>Aplikasi Persamaan Kuadrat</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Aplikasi Hitung Persamaan Kuadrat</h3>
+            <div class="inputan">
+                <label>Nilai a</label>
+                <input type="number" id="a" required>
+            </div>
+            <div class="inputan">
+                <label>Nilai b</label>
+                <input type="number" id="b" required>
+            </div>
+            <div class="inputan">
+                <label>Nilai c</label>
+                <input type="number" id="c" required>
+            </div>
+            <div class="tombol">
+                <button onclick="hitung()">HITUNG</button>
+                <button onclick="hapus()">HAPUS</button>
+            </div> 
+            
+            <div class="hasil">
+                <div class="output">
+                    <label>X1</label>
+                    <input type="text" id="x1" disabled>
+                </div> 
+                <div class="output">
+                    <label>X2</label>
+                    <input type="text" id="x2" disabled>
+                </div> 
+                <div class="output">
+                    <label>Diskriminan</label>
+                    <input type="text" id="diskriminan" disabled>
+                </div>
+            </div>
+            <p><span id="keterangan"></span></p>
+        </div>
+
+        <script src="pers_kuadrat.js"></script>
+    </body>
+</html>
