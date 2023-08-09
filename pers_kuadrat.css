@@ -72,7 +72,8 @@ body, html {
 }
 #keterangan {
     display: block; /* atau inline-block */
-    width: 250px;   /* Anda bisa mengatur lebar sesuai kebutuhan */
-    
-     
+    width: 250px;   /* Anda bisa mengatur lebar sesuai kebutuhan */     
 }
+
+.container h2{
+    text-align: center;
