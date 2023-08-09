@@ -75,5 +75,6 @@ body, html {
     width: 250px;   /* Anda bisa mengatur lebar sesuai kebutuhan */     
 }
 
-.container h3{
-    text-align: center;
+h3 {
+  text-align: center;
+}
