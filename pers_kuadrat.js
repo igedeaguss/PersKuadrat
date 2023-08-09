@@ -4,12 +4,6 @@ function hitung(){
     let b = parseFloat(document.getElementById('b').value);
     let c = parseFloat(document.getElementById('c').value);
     
-    a.addEventListener('focus', () => {
-        setTimeout(() => {
-          a.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 300); // Sesuaikan delay dan elemen yang akan diberi fokus
-      });
-
     // Memeriksa apakah ada input yang kosong
     if (isNaN(a) || isNaN(b) || isNaN(c)) {
         alert('Semua input harus diisi!');
