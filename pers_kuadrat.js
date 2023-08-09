@@ -34,9 +34,9 @@ function hitung(){
     Kemudian, kita mengatur nilai dari input tersebut dengan x2.toFixed(2), yang akan menampilkan hasil
     ke dalam elemen dengan dua angka desimal.
     */
-    document.querySelector('.output #x1').value = x1.toFixed(2);
-    document.querySelector('.output #x2').value = x2.toFixed(2);
-    document.querySelector('.output #diskriminan').value = diskri.toFixed(2);
+    document.getElementById('x1').textContent = x1.toFixed(2);
+    document.getElementById('x2').textContent = x2.toFixed(2);
+    document.getElementById('diskriminan').textContent = diskri.toFixed(2);
    
 
 }
@@ -49,8 +49,8 @@ function hapus() {
     document.getElementById('c').value = '';
 
     // Menghapus nilai output
-    document.getElementById('x1').value = '';
-    document.getElementById('x2').value = '';
-    document.getElementById('diskriminan').value = '';
+    document.getElementById('x1').textContent = '';
+    document.getElementById('x2').textContent = '';
+    document.getElementById('diskriminan').textContent = '';
     document.getElementById('keterangan').textContent="";
 }
