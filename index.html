@@ -1,38 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="pers_kuadrat.css">
-        <title>Aplikasi Persamaan Kuadrat</title>
-    </head>
-    <body>
-        <div class="container">
-            <h3>Aplikasi Hitung Persamaan Kuadrat</h3>
-            <div class="inputan">
-                <label>Nilai a</label>
-                <input type="number" id="a" required>
-            </div>
-            <div class="inputan">
-                <label>Nilai b</label>
-                <input type="number" id="b" required>
-            </div>
-            <div class="inputan">
-                <label>Nilai c</label>
-                <input type="number" id="c" required>
-            </div>
-            <div class="tombol">
-                <button onclick="hitung()">HITUNG</button>
-                <button onclick="hapus()">HAPUS</button>
-            </div> 
-            
-            <div class="hasil">
-                <p>X1: <span id="x1"></span></p>
-                <p>X2: <span id="x2"></span></p>
-                <p>Diskriminan:<span id="diskriminan"></span></p>
-                <p><span id="keterangan"></span></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Persamaan Kuadrat</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+        }
+        .result-label {
+            text-align: left;
+            flex: 1;
+        }
+        .result-colon {
+            text-align: left;
+            flex: 0 0 auto;
+            margin-right: 5px;
+        }
+        .result-value {
+            text-align: left;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Perhitungan Persamaan Kuadrat</h2>
+        <hr>
+        <form id="quadraticForm">
+            <div class="form-group row">
+                <label for="a" class="col-sm-3 col-form-label">Nilai a</label>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control" id="a" required>
+                </div>
             </div>
 
-        <script src="pers_kuadrat.js"></script>
-    </body>
+            <div class="form-group row">
+                <label for="b" class="col-sm-3 col-form-label">Nilai b</label>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control" id="b" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="c" class="col-sm-3 col-form-label">Nilai c</label>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control" id="c" required>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="hitung()">Hitung</button>
+            <button type="reset" class="btn btn-secondary" onclick="resetForm()">Reset</button>
+        </form>
+        <div id="hasil" class="mt-4" style="display:none;">
+            <h4>Hasil:</h4>
+            <div class="d-flex">
+                <div class="result-label">X1</div>
+                <div class="result-colon">:</div>
+                <div class="result-value"><span id="x1"></span></div>
+            </div>
+            <div class="d-flex">
+                <div class="result-label">X2</div>
+                <div class="result-colon">:</div>
+                <div class="result-value"><span id="x2"></span></div>
+            </div>
+            <div class="d-flex">
+                <div class="result-label">Diskriminan</div>
+                <div class="result-colon">:</div>
+                <div class="result-value"><span id="diskriminan"></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="pers_kuadrat.js"></script>
+</body>
 </html>
